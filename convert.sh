@@ -17,7 +17,7 @@ convertFile()
     local CANVAS="$3"
     local TARGET="$4"
 
-    convert "$SOURCE" -resize "$SIZE" -gravity north -background black -extent "$CANVAS" -compress None "$TARGET"
+    convert "$SOURCE" -resize "$SIZE"^ -gravity north -background black -extent "$CANVAS" -compress None "$TARGET"
     echo wrote "$TARGET"
 }
 
