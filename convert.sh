@@ -42,6 +42,10 @@ if [ ${#FILENAME} -gt 15 ] ; then
     exit 1
 fi
 
+if [ -d portraits ] ; then
+    TARGET="portraits/$TARGET"
+fi
+
 convertFile "$INPUT" 256x400 256x512 "${TARGET}H.tga"
 convertFile "$INPUT" 128x200 128x256 "${TARGET}L.tga"
 convertFile "$INPUT"  64x100  64x128 "${TARGET}M.tga"

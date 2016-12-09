@@ -16,7 +16,15 @@ Call `convert.sh` with the source image filename as parameter.
 The source image should have an aspect ratio of 16:25 (ideally 256x400
 pixels).
 
-Generated images must then be moved to the `portraits` folder in your
+Generated files will be written into the directory of the source
+files.  If a `portraits` directory exists in the current directory, it
+will be prepended to file outout (this allows for a symlink to your
+actual `portraits` directory, removing the need to move the images
+after generation).
+
+In both cases, existing images will be overwritten, so be careful.
+
+Generated images must be moved to the `portraits` folder in your
 Neverwinter Nights installation (create the folder if it is missing).
 
 Needs Imagemagick.
