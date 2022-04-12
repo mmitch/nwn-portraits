@@ -18,7 +18,7 @@ pixels).
 
 Generated files will be written into the directory of the source
 files.  If a `portraits` directory exists in the current directory, it
-will be prepended to file outout (this allows for a symlink to your
+will be prepended to file output (this allows for a symlink to your
 actual `portraits` directory, removing the need to move the images
 after generation).
 
